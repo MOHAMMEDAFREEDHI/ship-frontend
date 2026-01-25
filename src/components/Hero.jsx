@@ -256,9 +256,7 @@ export default function App() {
             
             {/* LOGO PLACEHOLDER */}
             <div className={`mb-8 transition-all duration-1000 transform ${loaded ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-               <div className="w-20 h-20 border border-rose-500/50 bg-rose-950/30 backdrop-blur-md flex items-center justify-center rounded-lg shadow-[0_0_20px_rgba(244,63,94,0.3)] group hover:border-rose-500 transition-colors">
-                  <img src="/log.png" alt="Architide Logo" className="w-16 h-16 object-contain drop-shadow-lg group-hover:rotate-12 transition-transform duration-500" />
-               </div>
+               <img src="/log.png" alt="Architide Logo" className="w-40 h-auto object-contain drop-shadow-[0_0_25px_rgba(244,63,94,0.5)] hover:scale-105 transition-transform duration-500" />
             </div>
             
             {/* Glitchy/Tech Header Badge */}
