@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-xs text-steel py-4 border-t border-white/10">
-        © {new Date().getFullYear()} Shipyard. All rights reserved.
+        ©  ARCHITIDE MARINE SYSTEMS ALL RIGHTS RESERVED.
       </div>
     </footer>
   );
