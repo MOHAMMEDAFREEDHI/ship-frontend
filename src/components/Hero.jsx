@@ -181,7 +181,7 @@ export default function App() {
             
             {/* LOGO PLACEHOLDER */}
             <div className={`mb-8 transition-all duration-1000 transform ${loaded ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'}`}>
-               <img src="/log3.png" alt="Architide Logo" className="w-40 h-auto object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:scale-105 transition-transform duration-500 filter hue-rotate-15 brightness-110" />
+               <img src="/log4.png" alt="Architide Logo" className="w-40 h-auto object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:scale-105 transition-transform duration-500 filter hue-rotate-15 brightness-110" />
             </div>
             
             {/* Glitchy/Tech Header Badge - BLINKING EFFECT */}
