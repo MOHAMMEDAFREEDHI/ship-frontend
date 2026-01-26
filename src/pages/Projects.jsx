@@ -204,7 +204,7 @@ export default function App() {
             <Anchor className="w-12 h-12 text-cyan-500 animate-bounce" />
           </div>
           <h1 className="text-6xl md:text-9xl font-black tracking-tighter uppercase mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-800">
-            Trident
+            ARCHITIDE 
           </h1>
           <p className="text-xl md:text-2xl text-cyan-500/80 font-mono tracking-[0.5em] uppercase">
             Naval Engineering
