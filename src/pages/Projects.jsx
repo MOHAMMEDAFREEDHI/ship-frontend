@@ -8,7 +8,7 @@ const projectsData = [
     title: "Spectre Stealth Frigate",
     category: "Coastal Defense",
     desc: "A radar-absorbent masterpiece designed for silent interception. Features an angular hull geometry that deflects sonar and radar waves.",
-    image: "https://images.unsplash.com/photo-1599557250669-e0705a325015?q=80&w=2670&auto=format&fit=crop",
+    image: "/offshore.webp",
     stats: { speed: "55 Knots", range: "2000 NM", stealth: "Active" },
     accent: "text-cyan-400",
     bgGradient: "from-cyan-900/40"
@@ -188,8 +188,15 @@ export default function App() {
 
       {/* Intro / Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Ambient Background */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-900/20 via-[#050b14] to-[#020408]"></div>
+        {/* Background Image & Overlays */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="offshore.webp"
+            alt="Naval Engineering Background"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-transparent to-transparent"></div>
+        </div>
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay"></div>
         
         <div className="text-center z-10 px-6">
