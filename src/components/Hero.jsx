@@ -184,18 +184,15 @@ export default function App() {
                <img src="/log4.png" alt="Architide Logo" className="w-40 h-auto object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:scale-105 transition-transform duration-500 filter hue-rotate-15 brightness-110" />
             </div>
             
-            {/* Glitchy/Tech Header Badge - BLINKING EFFECT */}
-            <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-950/30 backdrop-blur-md mb-8 transition-all duration-1000 delay-100 transform ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-[pulse_1.5s_ease-in-out_infinite] shadow-[0_0_15px_#22d3ee]"></span>
-              <span className="text-cyan-300 text-xs font-mono font-bold tracking-widest uppercase">System Online // v.2.0.4</span>
-            </div>
-
+           
+            
             <h1 className="relative">
-              <span className={`block text-6xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-cyan-900 mb-2 tracking-tighter transition-all duration-1000 delay-200 transform ${loaded ? 'translate-x-0 opacity-100 blur-0' : '-translate-x-20 opacity-0 blur-lg'}`}>
+              {/* FIXED: Increased padding-right to pr-6 and added pb-1 to ensure the 'E' is fully visible */}
+              <span className={`block text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-cyan-500 mb-2 tracking-tighter transition-all duration-1000 delay-200 transform ${loaded ? 'translate-x-0 opacity-100 blur-0' : '-translate-x-20 opacity-0 blur-lg'} pr-6 pb-1`}>
                 ARCHITIDE
               </span>
               <span className={`block text-xl md:text-3xl font-light tracking-[0.5em] text-cyan-400/90 uppercase mt-4 transition-all duration-1000 delay-300 transform ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                Hyper-Marine Architects
+                 Marine-Engineering Services
               </span>
             </h1>
 
@@ -203,7 +200,7 @@ export default function App() {
             <div className={`mt-12 flex flex-col md:flex-row gap-6 justify-start items-center md:items-start transition-all duration-1000 delay-500 transform ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
               <button 
                 onClick={() => scrollToSection('about-section')}
-                className="group relative px-10 py-4 bg-cyan-900/20 border border-cyan-500/50 text-cyan-400 font-bold uppercase tracking-widest overflow-hidden transition-all hover:bg-cyan-600 hover:text-white hover:border-cyan-400 shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_40px_rgba(6,182,212,0.5)]"
+                className="group relative px-8 py-3 text-sm bg-cyan-900/20 border border-cyan-500/50 text-cyan-400 font-bold uppercase tracking-widest overflow-hidden transition-all hover:bg-cyan-600 hover:text-white hover:border-cyan-400 shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:shadow-[0_0_40px_rgba(6,182,212,0.5)]"
               >
                 <div className="absolute top-0 left-[-100%] w-[50%] h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[20deg] group-hover:left-[200%] transition-all duration-700 ease-in-out"></div>
                 <span className="relative z-10 flex items-center gap-3">
@@ -211,7 +208,7 @@ export default function App() {
                 </span>
               </button>
 
-              <button className="px-10 py-4 text-slate-400 font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-2 group">
+              <button className="px-8 py-3 text-sm text-slate-400 font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-2 group">
                 <span className="w-8 h-[1px] bg-slate-600 group-hover:bg-white transition-colors"></span>
                 Our Fleet
               </button>
@@ -534,7 +531,7 @@ function ScrollRevealWrapper({ children, direction = 'up', delay = 0 }) {
   return (
     <div 
       ref={ref} 
-      className={`transition-all duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform ${isVisible ? 'opacity-100 translate-y-0 translate-x-0' : `opacity-0 ${getTransform()}`}`}
+      className={`transition-all duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform ${isVisible ? 'opacity-100 translate-y-0 translate-x-0' : `opacity-0 ${getTransform()}`}`}  
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
