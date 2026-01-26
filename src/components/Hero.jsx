@@ -189,7 +189,7 @@ export default function App() {
             <h1 className="relative">
               {/* FIXED: Increased padding-right to pr-6 and added pb-1 to ensure the 'E' is fully visible */}
               <span className={`block text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-cyan-500 mb-2 tracking-tighter transition-all duration-1000 delay-200 transform ${loaded ? 'translate-x-0 opacity-100 blur-0' : '-translate-x-20 opacity-0 blur-lg'} pr-6 pb-1`}>
-                ARCHITIDE  Marine
+                ARCHITIDE  MARINE
               </span>
               <span className={`block text-xl md:text-3xl font-light tracking-[0.5em] text-cyan-400/90 uppercase mt-4 transition-all duration-1000 delay-300 transform ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
                  AND Engineering Services
