@@ -192,7 +192,7 @@ export default function App() {
                 ARCHITIDE
               </span>
               <span className={`block text-xl md:text-3xl font-light tracking-[0.5em] text-cyan-400/90 uppercase mt-4 transition-all duration-1000 delay-300 transform ${loaded ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
-                 Marine-Engineering Services
+                 Marine AND Engineering Services
               </span>
             </h1>
 
