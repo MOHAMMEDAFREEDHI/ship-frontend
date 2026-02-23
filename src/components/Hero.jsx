@@ -16,6 +16,8 @@ import {
   Layers,
   Send
 } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 /* --- 1. UTILITY COMPONENTS & HOOKS --- */
 
@@ -509,7 +511,15 @@ export default function App() {
         </div>
       </section>
 
-      
+      {/* --- VIEW ALL SERVICES BUTTON --- */}
+<div className="bg-[#050914] py-16 flex justify-center">
+  <Link to="/services">
+    <button className="px-10 py-4 rounded-full bg-white text-black font-bold uppercase tracking-widest hover:bg-cyan-500 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_40px_rgba(6,182,212,0.6)]">
+      View All Services
+    </button>
+  </Link>
+</div>
+
 
     </div>
   );

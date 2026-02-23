@@ -10,7 +10,7 @@ export default function Contact() {
 
       <div className="max-w-xl mx-auto text-center text-steel">
         <p>Email: contact@shipyard.com</p>
-        <p className="mt-2">Phone: +91 9XXXXXXXXX</p>
+        <p className="mt-2">Phone: +971  </p>
       </div>
     </section>
   );

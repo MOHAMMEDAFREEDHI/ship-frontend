@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
+import Services from "./pages/Services"; 
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/about" element={<About />} />  
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       
       <Footer />
